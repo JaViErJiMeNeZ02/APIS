@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Clima & Fotos</title>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-3xl font-bold">Clima y Fotos</h1>
+    </header>
+    <main class="container mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+        <article class="p-4 bg-white rounded shadow">
+            <h2 class="text-2xl font-bold">Buscar Lugar</h2>
+            <form id="formularioUbicacion" class="mt-4">
+                <input id="entradaUbicacion" type="text" placeholder="Ingresa un lugar" class="p-2 border rounded w-full">
+                <button type="submit" class="mt-2 px-4 py-2 bg-blue-600 text-white rounded">Buscar</button>
+            </form>
+        </article>
+        <article id="infoClima" class="p-4 bg-white rounded shadow">
+            <h2 class="text-2xl font-bold">Clima</h2>
+            <p class="mt-4">Ingresa un lugar para obtener el clima.</p>
+        </article>
+        <article id="galeriaFotos" class="p-4 bg-white rounded shadow col-span-2">
+            <h2 class="text-2xl font-bold">Fotos</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mt-4" id="galeriaFotos"></div>
+        </article>
+    </main>
+    <footer class="bg-gray-800 text-white text-center p-4">
+        © 2024 Clima y Fotos
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
